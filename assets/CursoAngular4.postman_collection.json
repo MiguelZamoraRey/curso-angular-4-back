@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CursoAngular4",
+		"_postman_id": "7825466a-b661-e518-86c2-d38c1fd05f9e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"url": "http://localhost:3000/producto",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProductos",
+			"request": {
+				"url": "http://localhost:3000/producto",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProductosById",
+			"request": {
+				"url": "http://localhost:3000/producto/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProductosById",
+			"request": {
+				"url": "http://localhost:3000/producto/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProductos",
+			"request": {
+				"url": "http://localhost:3000/producto/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Producto Chachi\",\n\t\"description\": \"un producto chulisimo\",\n\t\"price\": \"20\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProductoByid",
+			"request": {
+				"url": "http://localhost:3000/producto/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 5,\n\t\"name\":\"Producto trocolo\",\n\t\"description\": \"un trocolomocolo\",\n\t\"price\": \"40\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
